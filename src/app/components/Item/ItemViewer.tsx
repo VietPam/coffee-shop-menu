@@ -2,7 +2,7 @@ import { ItemClass } from '@/app/lang/page';
 import { Item } from './Item';
 import { ImageViewer } from '@/app/components/Item/Image/ImageViewer';
 import { SimpleCategory } from '@/app/lang/page';
-
+import { PriceSelectorViewer } from '../PriceSelector/PriceSelectorViewer';
 export function ItemViewer({
     item,
 }: {
@@ -27,6 +27,12 @@ export function ItemViewer({
             }
             description={
                 <p>{item.description}</p>
+            }
+            priceSelector={
+                <PriceSelectorViewer
+                    name={item.name}
+                    price={item.price}
+                />
             }
         />
     );

@@ -1,6 +1,7 @@
 export interface ItemParams {
     image?: React.ReactNode;
     title: React.ReactNode;
+    priceSelector: React.ReactNode;
     description?: React.ReactNode;
     children?: React.ReactNode;
 }
@@ -9,6 +10,7 @@ export function Item({
     image,
     title,
     description,
+    priceSelector,
     children,
 }: ItemParams) {
     return (
@@ -20,6 +22,7 @@ export function Item({
                     {title}
                     {description}
                 </header>
+                {priceSelector}
             </div>
         </article>
     );
