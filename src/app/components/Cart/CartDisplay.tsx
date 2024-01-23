@@ -2,17 +2,10 @@
 
 import ShoppingCartIcon from '@heroicons/react/24/outline/ShoppingCartIcon';
 import { useContext, useMemo, useRef } from 'react';
-import { CartContentsContext } from './CartProvider';
 import Link from 'next/link';
 
 export function CartDisplay() {
-    const cart = useContext(CartContentsContext);
     const buttonRef = useRef<HTMLAnchorElement>(null);
-
-    const cartItemCount = useMemo(() => {
-        buttonRef?.current?.classList.add('animate-ping-once');
-        return cart.reduce((a, b) => a + (b.quantity ?? 1), 0);
-    }, [cart]);
 
     const handleAnimationEnd = useMemo(
         () => () => {
@@ -31,11 +24,6 @@ export function CartDisplay() {
             href={'/checkout'}
         >
             <div className="indicator absolute">
-                {cartItemCount !== 0 && (
-                    <span className="indicator-start indicator-bottom badge-secondary badge indicator-item">
-                        {cartItemCount}
-                    </span>
-                )}
                 <ShoppingCartIcon className="h-6 w-6" />
             </div>
         </Link>
