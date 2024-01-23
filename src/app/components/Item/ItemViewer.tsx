@@ -1,7 +1,7 @@
-import { ItemClass } from '@/app/lang/page';
+import { ItemClass } from '@/app/menu/page';
 import { Item } from './Item';
 import { ImageViewer } from '@/app/components/Item/Image/ImageViewer';
-import { SimpleCategory } from '@/app/lang/page';
+import { SimpleCategory } from '@/app/menu/page';
 import { PriceSelectorViewer } from '../PriceSelector/PriceSelectorViewer';
 export function ItemViewer({
     item,

@@ -1,4 +1,4 @@
-import { SimpleCategory } from '@/app/lang/page';
+import { SimpleCategory } from '@/app/menu/page';
 import { ItemViewer } from '../Item/ItemViewer';
 import { Category } from './Category';
 
