@@ -7,8 +7,7 @@ import {
     useRef,
     useState,
 } from 'react';
-import { AutoResizableTextarea } from './AutoResizableTextarea';
-import { mutate } from 'swr';
+import { AutoResizableTextarea } from '../AutoResizableTextarea';
 
 export type HTMLTextField = HTMLInputElement & HTMLTextAreaElement;
 export type HTMLTextFieldAttributes =
@@ -95,7 +94,6 @@ export function EditableText({
                     headers: { 'Content-Type': 'application/json' },
                 });
                 if (result.status === 200) {
-                    await mutate('/api/category');
                 } else {
                     reset();
                 }

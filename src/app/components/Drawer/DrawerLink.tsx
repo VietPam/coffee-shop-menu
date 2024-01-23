@@ -1,6 +1,6 @@
 'use client';
 
-import { scrollElementIntoView } from '@/utils/client/scrollElementIntoView';
+import { scrollElementIntoView } from '@/app/components/utils/client/scrollElementIntoView'
 import { Header } from './Header';
 import { useEffect, useState } from 'react';
 

@@ -9,18 +9,26 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.17",
+    "daisyui": "^2.51.5",
+    "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.0",
-    "@heroicons/react": "^2.0.17"
+    "swr": "^2.2.4"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "husky": "^8.0.3",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0"
+    "rollup-plugin-swc": "^0.2.1",
+    "sass": "^1.60.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.31.1",
+    "vitest-mock-extended": "^1.1.3"
   }
 }

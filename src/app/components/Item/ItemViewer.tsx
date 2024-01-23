@@ -1,7 +1,7 @@
-import { ItemClass } from '@/app/[lang]/page';
+import { ItemClass } from '@/app/lang/page';
 import { Item } from './Item';
 import { ImageViewer } from '@/app/components/Item/Image/ImageViewer';
-import { SimpleCategory } from '@/app/[lang]/page';
+import { SimpleCategory } from '@/app/lang/page';
 
 export function ItemViewer({
     item,
