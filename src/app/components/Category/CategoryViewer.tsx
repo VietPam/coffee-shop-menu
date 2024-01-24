@@ -1,4 +1,4 @@
-import { SimpleCategory } from '@/app/menu/page';
+import { SimpleCategory } from '../../models/Category';
 import { ItemViewer } from '../Item/ItemViewer';
 import { Category } from './Category';
 

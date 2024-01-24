@@ -9,7 +9,7 @@ export interface DrawerProps {
     children: React.ReactNode;
     navbarElements?: React.ReactNode;
     headers?:  {
-        name: string;  // Assuming you want to use category.name as the name property of Header
+        name: string; 
         id: string;
         depth: number;
     }[];

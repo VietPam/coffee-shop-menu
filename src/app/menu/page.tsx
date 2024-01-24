@@ -4,22 +4,6 @@ import bg from './image/home/bg.jpg'
 import clickhere from './image/home/clickhere.png'
 import { getCategories } from './data';
 import '../globals.scss';
-export type SimpleCategory = {
-    _id: string;
-    name: string;
-    depth: number;
-    index?: number;
-    items: ItemClass[];
-};
-export type ItemClass ={
-    name: string;
-    description: string;
-    price: string;
-    image: string;
-};
-
-
-export const revalidate = false;
 
 export default async function Home() {
     const categories = await getCategories();
@@ -28,8 +12,6 @@ export default async function Home() {
             name='Xem Menu'
             navbarElements={
                 <>
-                    {/* <LanguagePickerViewer selectedLang={lang} />
-                    <CartDisplay /> */}
                 </>
             }
             navbarChangeOnScroll={true}
@@ -78,7 +60,7 @@ export default async function Home() {
                     ?.sort((a, b) => (b.index ?? 0) - (a.index ?? 0))
                     .map((category, index) => (
                         <CategoryViewer
-                            id={category.index?.toString()}
+                            id={index.toString()}
                             key={index}
                             category={category}
                         />
