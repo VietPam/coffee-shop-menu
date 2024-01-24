@@ -26,7 +26,7 @@ export function ItemViewer({
                 </h3>
             }
             description={
-                <p>{item.description}</p>
+                <p className="text-base text-stone-950	 font-bold">{item.description}</p>
             }
             priceSelector={
                 <PriceSelectorViewer
