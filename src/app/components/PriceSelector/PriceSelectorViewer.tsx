@@ -17,8 +17,9 @@ export function PriceSelectorViewer({
         <PriceSelector
         sizeSelector={
             <>
+                    
                 {sizes?.map((size, index) => (
-                    <div></div>
+                    <div key ={index}></div>
                     // <label
                     //     className="label flex cursor-pointer flex-col"
                     //     key={index}
