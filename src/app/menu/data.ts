@@ -17,13 +17,35 @@ const cafe_truyen_thong: SimpleCategory =
                 name: 'Cà phê đen',
                 description: 'Nóng | Đá',
                 price: `12.000đ`,
-                image: 'https://github.com/phamquangviet891/coffee-shop-menu/blob/master/data-image/category/cafe_truyen_thong/black.jpg',
+                image: 'https://raw.githubusercontent.com/phamquangviet891/coffee-shop-menu/master/data-image/category/cafe_truyen_thong/black.jpg',
             },
             {
-                name: 'Cà phê Sữa SG',
-                description: 'description 1',
+                name: 'Cà phê Sữa',
+                description: 'Nóng | Đá',
                 price: `24.000đ`,
-                image: '',
+                image: 'https://raw.githubusercontent.com/phamquangviet891/coffee-shop-menu/master/data-image/category/cafe_truyen_thong/black-milk.jpg',
+            },
+        ],
+    };
+
+    const tra: SimpleCategory = 
+    {
+        _id: 'tra',
+        name: 'TRÀ',
+        depth: 1,
+        index: 2,
+        items: [
+            {
+                name: 'Trà gừng cam thảo',
+                description: 'Nóng',
+                price: `15.000đ`,
+                image: 'https://raw.githubusercontent.com/phamquangviet891/coffee-shop-menu/master/data-image/category/cafe_truyen_thong/black.jpg',
+            },
+            {
+                name: 'Trà đào cam sả',
+                description: 'Đá',
+                price: `25.000đ`,
+                image: 'https://raw.githubusercontent.com/phamquangviet891/coffee-shop-menu/master/data-image/category/cafe_truyen_thong/black-milk.jpg',
             },
         ],
     };

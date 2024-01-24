@@ -65,10 +65,10 @@ export function Drawer({
                         </label>
                     </div>
                     <Link
-                        href="/"
+                        href="/menu"
                         className="btn-ghost btn text-xl normal-case"
                     >
-                        {name ?? 'Slivki'}
+                        {name ?? 'Quang Việt'}
                     </Link>
                     {navbarElements}
                 </Navbar>

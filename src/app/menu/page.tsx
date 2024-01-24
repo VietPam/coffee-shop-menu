@@ -25,7 +25,7 @@ export default async function Home() {
     const categories = await getCategories();
     return (
         <Drawer
-            name='Name'
+            name='Xem Menu'
             navbarElements={
                 <>
                     {/* <LanguagePickerViewer selectedLang={lang} />
@@ -53,9 +53,9 @@ export default async function Home() {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <h1 className="mb-5 text-5xl font-bold">
-                        Name
+                        Cỏ
                         </h1>
-                        <p className="mb-5">Name</p>
+                        <p className="mb-5">Cà phê Điện Bàn</p>
                     </div>
                 </div>
                 <a
